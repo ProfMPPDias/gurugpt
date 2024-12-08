@@ -16,8 +16,8 @@ Aceitamos os seguintes tipos de contribuições:
 Para começar, faça um fork do projeto no GitHub e clone-o localmente em sua máquina. Em seguida, crie um novo branch para trabalhar em suas alterações.
 
 ```bash
-git clone https://github.com/ivanfioravanti/chatbot-ollama.git
-cd chatbot-ollama
+git clone [https://github.com/ProfMPPDias/gurugpt.git]
+cd gurugpt
 git checkout -b nome-do-meu-branch
 ```
 
