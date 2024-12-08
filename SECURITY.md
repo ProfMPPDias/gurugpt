@@ -1,51 +1,52 @@
-# Security Policy
+```markdown
+# Política de Segurança
 
-This security policy outlines the process for reporting vulnerabilities and secrets found within this GitHub repository. It is essential that all contributors and users adhere to this policy in order to maintain a secure and stable environment.
+Esta política de segurança descreve o processo para relatar vulnerabilidades e segredos encontrados neste repositório do GitHub. É fundamental que todos os contribuidores e usuários sigam esta política para manter um ambiente seguro e estável.
 
-## Reporting a Vulnerability
+## Reportando uma Vulnerabilidade
 
-If you discover a vulnerability within the code, dependencies, or any other component of this repository, please follow these steps:
+Se você descobrir uma vulnerabilidade no código, dependências ou em qualquer outro componente deste repositório, siga estas etapas:
 
-1. **Do not disclose the vulnerability publicly.** Publicly disclosing a vulnerability may put the project at risk and could potentially harm other users.
+1. **Não divulgue a vulnerabilidade publicamente.** Divulgar publicamente uma vulnerabilidade pode colocar o projeto em risco e potencialmente prejudicar outros usuários.
 
-2. **Contact the repository maintainer(s) privately.** Send a private message or email to the maintainer(s) with a detailed description of the vulnerability. Include the following information:
+2. **Entre em contato com o(s) mantenedor(es) do repositório de forma privada.** Envie uma mensagem privada ou e-mail para o(s) mantenedor(es) com uma descrição detalhada da vulnerabilidade. Inclua as seguintes informações:
+   - O(s) componente(s) afetado(s)
+   - Passos para reproduzir o problema
+   - Impacto potencial da vulnerabilidade
+   - Quaisquer possíveis mitigações ou soluções alternativas
 
-   - The affected component(s)
-   - Steps to reproduce the issue
-   - Potential impact of the vulnerability
-   - Any possible mitigations or workarounds
+3. **Aguarde uma resposta do(s) mantenedor(es).** Por favor, seja paciente, pois eles podem precisar de tempo para investigar e verificar o problema. O(s) mantenedor(es) devem reconhecer o recebimento do seu relatório e fornecer uma estimativa de prazo para abordar a vulnerabilidade.
 
-3. **Wait for a response from the maintainer(s).** Please be patient, as they may need time to investigate and verify the issue. The maintainer(s) should acknowledge receipt of your report and provide an estimated time frame for addressing the vulnerability.
+4. **Colabore com o(s) mantenedor(es).** Se solicitado, forneça informações adicionais ou assistência para ajudar a resolver o problema.
 
-4. **Cooperate with the maintainer(s).** If requested, provide additional information or assistance to help resolve the issue.
+5. **Não divulgue a vulnerabilidade até que o(s) mantenedor(es) a tenham resolvido.** Uma vez que o problema tenha sido resolvido, o(s) mantenedor(es) podem optar por divulgar publicamente a vulnerabilidade e dar crédito a você pela descoberta.
 
-5. **Do not disclose the vulnerability until the maintainer(s) have addressed it.** Once the issue has been resolved, the maintainer(s) may choose to publicly disclose the vulnerability and credit you for the discovery.
+## Reportando Segredos
 
-## Reporting Secrets
+Se você descobrir qualquer segredo, como chaves de API ou senhas, dentro do repositório, siga estas etapas:
 
-If you discover any secrets, such as API keys or passwords, within the repository, follow these steps:
+1. **Não compartilhe o segredo nem o utilize para fins não autorizados.** Usar indevidamente um segredo pode ter consequências graves para o projeto e seus usuários.
 
-1. **Do not share the secret or use it for unauthorized purposes.** Misusing a secret could have severe consequences for the project and its users.
+2. **Entre em contato com o(s) mantenedor(es) do repositório de forma privada.** Notifique-os sobre o segredo descoberto, sua localização e quaisquer riscos potenciais associados a ele.
 
-2. **Contact the repository maintainer(s) privately.** Notify them of the discovered secret, its location, and any potential risks associated with it.
+3. **Aguarde uma resposta e instruções adicionais.**
 
-3. **Wait for a response and further instructions.**
+## Divulgação Responsável
 
-## Responsible Disclosure
+Incentivamos a divulgação responsável de vulnerabilidades e segredos. Se você seguir as etapas descritas nesta política, trabalharemos em conjunto para entender e resolver o problema. Não tomaremos medidas legais contra indivíduos que descubram e relatem vulnerabilidades ou segredos de acordo com esta política.
 
-We encourage responsible disclosure of vulnerabilities and secrets. If you follow the steps outlined in this policy, we will work with you to understand and address the issue. We will not take legal action against individuals who discover and report vulnerabilities or secrets in accordance with this policy.
+## Correção e Atualizações
 
-## Patching and Updates
+Estamos comprometidos em manter a segurança do nosso projeto. Quando vulnerabilidades forem relatadas e confirmadas, iremos:
 
-We are committed to maintaining the security of our project. When vulnerabilities are reported and confirmed, we will:
+1. Trabalhar diligentemente para desenvolver e aplicar uma correção ou implementar uma estratégia de mitigação.
+2. Manter o relator informado sobre o progresso da correção.
+3. Atualizar o repositório com os patches necessários e documentar as alterações nas notas de versão ou changelog.
+4. Dar crédito ao relator pela descoberta, se ele desejar ser reconhecido.
 
-1. Work diligently to develop and apply a patch or implement a mitigation strategy.
-2. Keep the reporter informed about the progress of the fix.
-3. Update the repository with the necessary patches and document the changes in the release notes or changelog.
-4. Credit the reporter for the discovery, if they wish to be acknowledged.
+## Contribuindo para a Segurança
 
-## Contributing to Security
+Bem-vindos são contribuições que ajudem a melhorar a segurança do nosso projeto. Se você tem sugestões ou deseja contribuir com código para abordar problemas de segurança, por favor, siga as diretrizes padrão de contribuição para este repositório. Ao enviar um pull request relacionado à segurança, mencione que ele aborda um problema de segurança e forneça o contexto necessário.
 
-We welcome contributions that help improve the security of our project. If you have suggestions or want to contribute code to address security issues, please follow the standard contribution guidelines for this repository. When submitting a pull request related to security, please mention that it addresses a security issue and provide any necessary context.
-
-By adhering to this security policy, you contribute to the overall security and stability of the project. Thank you for your cooperation and responsible handling of vulnerabilities and secrets.
+Ao aderir a esta política de segurança, você contribui para a segurança e estabilidade geral do projeto. Obrigado pela sua cooperação e tratamento responsável de vulnerabilidades e segredos.
+```
