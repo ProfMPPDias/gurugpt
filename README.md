@@ -1,88 +1,81 @@
-# Chatbot Ollama
+# GuruGPT - Seu Chat Zen
 
-## About
+## Sobre
+GuruGPT é uma interface de usuário de chat de código aberto para suportar a rede neural desenvolvido por Marcos Dias baseado em Ollama.
 
-Chatbot Ollama is an open source chat UI for Ollama.
+![Chatbot Ollama](./public/screenshots/gurugpt_print.png)
 
-This project is based on [chatbot-ui](https://github.com/mckaywrigley/chatbot-ui) by [Mckay Wrigley](https://github.com/mckaywrigley).
+## Atualizações
+Chatbot GuruGPT será atualizado ao longo do tempo.
 
-![Chatbot Ollama](./public/screenshots/screenshot-2023-10-02.png)
-
-## Updates
-
-Chatbot Ollama will be updated over time.
-
-### Next up
-
-- [ ] pull a model
-- [ ] delete a model
-- [ ] show model information
+### Próximos passos
+- [ ] baixar um modelo
+- [ ] excluir um modelo
+- [ ] mostrar informações do modelo
 
 ## Docker
-
-Build locally:
-
+Construir localmente:
 ```shell
-docker build -t chatbot-ollama .
-docker run -p 3000:3000 chatbot-ollama
+docker build -t gurugpt .
+docker run -p 3000:3000 gurugpt
 ```
 
-Pull from ghcr:
+Pull do ghcr:
 
 ```bash
-docker run -p 3000:3000 ghcr.io/ivanfioravanti/chatbot-ollama:main
+docker run -p 3000:3000 gurugpt:main
 ```
 
-## Running Locally
+## Rodando localmente
 
 ### 1. Clone Repo
 
 ```bash
-git clone https://github.com/ivanfioravanti/chatbot-ollama.git
+git clone https://github.com/ProfMPPDias/gurugpt.git
 ```
 
-### 2. Move to folder
+### 2. Mova a pasta
 
 ```bash
-cd chatbot-ollama
+cd gurugpt
 ```
 
-### 3. Install Dependencies
+### 3. Instalar Dependencias
 
 ```bash
 npm ci
 ```
 
-### 4. Run Ollama server
+### 4. Rodar a rede neural Ollama Server
 
-Either via the cli:
+Por via cli:
 
 ```bash
 ollama serve
 ```
 
-or via the [desktop client](https://ollama.ai/download)
+ou via [desktop client](https://ollama.ai/download)
 
-### 5. Run App
+### 5. Rode o App
 
 ```bash
 npm run dev
 ```
 
-### 6. Use It
+### 6. Use isso
 
-You should be able to start chatting.
+Você deve ser capaz de começar a conversar.
 
-## Configuration
+## Configuração
 
-When deploying the application, the following environment variables can be set:
+Ao implantar o aplicativo, as seguintes variáveis de ambiente podem ser definidas:
 
-| Environment Variable              | Default value                  | Description                                                                                                                               |
+| Variável de Ambiente              | Valor padrão                   | Descrição                                                                                                                                 |
 | --------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| DEFAULT_MODEL                     | `mistral:latest`                | The default model to use on new conversations                                                                                             |
-| NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT | [see here](utils/app/const.ts) | The default system prompt to use on new conversations                                                                                     |
-| NEXT_PUBLIC_DEFAULT_TEMPERATURE   | 1                              | The default temperature to use on new conversations                                                                                       |
+| DEFAULT_MODEL                     | `mistral:latest`               | O modelo padrão a ser usado em novas conversas                                                                                            |
+| NEXT_PUBLIC_DEFAULT_SYSTEM_PROMPT | [ver aqui](utils/app/const.ts) | O prompt de sistema padrão a ser usado em novas conversas                                                                                 |
+| NEXT_PUBLIC_DEFAULT_TEMPERATURE   | 1                              | A temperatura padrão a ser usada em novas conversas                                                                                       |
 
-## Contact
+## Contato
 
-If you have any questions, feel free to reach out to me on [X](https://x.com/ivanfioravanti).
+Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato comigo no email mppdias@outlook.com.
