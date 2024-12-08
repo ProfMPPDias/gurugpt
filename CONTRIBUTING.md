@@ -1,44 +1,38 @@
-# Contributing Guidelines
+# Diretrizes de Contribuição
+**Bem-vindo ao GuruGPT - Seu Chat Zen**
+Agradecemos seu interesse em contribuir para nosso projeto.
+Antes de começar, por favor, leia nossas diretrizes de contribuição.
 
-**Welcome to Chatbot Ollama!**
+## Tipos de Contribuições
+Aceitamos os seguintes tipos de contribuições:
+- Correções de bugs
+- Novos recursos
+- Melhorias na documentação
+- Otimizações de código
+- Traduções
+- Testes
 
-We appreciate your interest in contributing to our project.
-
-Before you get started, please read our guidelines for contributing.
-
-## Types of Contributions
-
-We welcome the following types of contributions:
-
-- Bug fixes
-- New features
-- Documentation improvements
-- Code optimizations
-- Translations
-- Tests
-
-## Getting Started
-
-To get started, fork the project on GitHub and clone it locally on your machine. Then, create a new branch to work on your changes.
+## Começando
+Para começar, faça um fork do projeto no GitHub e clone-o localmente em sua máquina. Em seguida, crie um novo branch para trabalhar em suas alterações.
 
 ```bash
 git clone https://github.com/ivanfioravanti/chatbot-ollama.git
 cd chatbot-ollama
-git checkout -b my-branch-name
+git checkout -b nome-do-meu-branch
 ```
 
-Before submitting your pull request, please make sure your changes pass our automated tests and adhere to our code style guidelines.
+Antes de enviar seu pull request, certifique-se de que suas alterações passam em nossos testes automatizados e seguem nossas diretrizes de estilo de código.
 
-## Pull Request Process
+## Processo de Pull Request
 
-1. Fork the project on GitHub.
-2. Clone your forked repository locally on your machine.
-3. Create a new branch from the main branch.
-4. Make your changes on the new branch.
-5. Ensure that your changes adhere to our code style guidelines and pass our automated tests.
-6. Commit your changes and push them to your forked repository.
-7. Submit a pull request to the main branch of the main repository.
+1. Faça um fork do projeto no GitHub.
+2. Clone seu repositório forkado localmente em sua máquina.
+3. Crie um novo branch a partir do branch principal.
+4. Faça suas alterações no novo branch.
+5. Certifique-se de que suas alterações seguem nossas diretrizes de estilo de código e passam em nossos testes automatizados.
+6. Faça commit das suas alterações e envie-as para seu repositório forkado.
+7. Envie um pull request para o branch principal do repositório principal.
 
-## Contact
+## Contato
 
-If you have any questions or need help getting started, feel free to reach out to me on [X](https://x.com/ivanfioravanti).
+Se você tiver alguma dúvida ou precisar de ajuda para começar, sinta-se à vontade para entrar em contato comigo no email: mppdias@outlook.com.
