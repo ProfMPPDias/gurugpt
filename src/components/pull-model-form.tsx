@@ -22,7 +22,7 @@ import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, {
-    message: "Por favor, selecione o modelo para instalar.",
+    message: "Please select a model to pull",
   }),
 });
 
@@ -143,7 +143,7 @@ export default function PullModelForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Modelo</FormLabel>
+              <FormLabel>Model name</FormLabel>
               <FormControl>
                 <Input
                   {...field}
@@ -161,7 +161,7 @@ export default function PullModelForm() {
                 >
                   library
                 </a>{" "}
-                para a lista de modelos.
+                for a list of available models.
               </p>
               <FormMessage />
               <div className="space-y-2 w-full">
@@ -179,7 +179,7 @@ export default function PullModelForm() {
                       </span>
                     </div>
                   ) : (
-                    "Baixar Modelo"
+                    "Pull model"
                   )}
                 </Button>
                 <p className="text-xs text-center">

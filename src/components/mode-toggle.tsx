@@ -20,7 +20,7 @@ export function ModeToggle() {
       >
         <Monitor className="size-4" />
 
-        <p>Systema</p>
+        <p>System</p>
       </Button>
       <Button
         variant={theme === "light" ? "default" : "outline"}
@@ -28,7 +28,7 @@ export function ModeToggle() {
         onClick={() => setTheme("light")}
       >
         <Sun className="size-4" />
-        <p>Claro</p>
+        <p>Light</p>
       </Button>
       <Button
         variant={theme === "dark" ? "default" : "outline"}
@@ -37,7 +37,7 @@ export function ModeToggle() {
       >
         <Moon className="size-4" />
 
-        <p>Escuro</p>
+        <p>Dark</p>
       </Button>
     </div>
   );

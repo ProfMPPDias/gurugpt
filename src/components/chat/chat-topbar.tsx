@@ -113,7 +113,7 @@ export default function ChatTopbar({
             ))
           ) : (
             <Button variant="ghost" disabled className=" w-full">
-              Sem Modelos Disponíveis
+              No models available
             </Button>
           )}
         </PopoverContent>

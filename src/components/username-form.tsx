@@ -49,9 +49,9 @@ export default function UsernameForm({ setOpen }: UsernameFormProps) {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nome</FormLabel>
+              <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input placeholder="Digite seu nome" {...field} />
+                <Input placeholder="Enter your name" {...field} />
               </FormControl>
               <FormDescription>
                 This won&apos;t be public. It&apos;s just for you.
@@ -60,7 +60,7 @@ export default function UsernameForm({ setOpen }: UsernameFormProps) {
             </FormItem>
           )}
         />
-        <Button className="w-full" type="submit">Enviar</Button>
+        <Button className="w-full" type="submit">Submit</Button>
       </form>
     </Form>
   )

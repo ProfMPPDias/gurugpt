@@ -67,13 +67,13 @@ export default function UserSettings() {
             <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
               <div className="flex w-full gap-2 p-1 items-center cursor-pointer">
                 <GearIcon className="w-4 h-4" />
-                Configurações
+                Settings
               </div>
             </DropdownMenuItem>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader className="space-y-4">
-              <DialogTitle>Configurações</DialogTitle>
+              <DialogTitle>Settings</DialogTitle>
               <EditUsernameForm setOpen={setOpen} />
             </DialogHeader>
           </DialogContent>

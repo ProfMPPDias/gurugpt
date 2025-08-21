@@ -69,14 +69,14 @@ export function Sidebar({
           <div className="flex gap-3 items-center ">
             {!isCollapsed && !isMobile && (
               <Image
-                src="ollama.png"
-                alt="GuruGPT"
+                src="/ollama.png"
+                alt="AI"
                 width={28}
                 height={28}
                 className="dark:invert hidden 2xl:block"
               />
             )}
-            Novo Chat
+            New chat
           </div>
           <SquarePen size={18} className="shrink-0 w-4 h-4" />
         </Button>
@@ -132,17 +132,18 @@ export function Sidebar({
                               onClick={(e) => e.stopPropagation()}
                             >
                               <Trash2 className="shrink-0 w-4 h-4" />
-                              Apagar Chat
+                              Delete chat
                             </Button>
                           </DialogTrigger>
                           <DialogContent>
                             <DialogHeader className="space-y-4">
                               <DialogTitle>Delete chat?</DialogTitle>
                               <DialogDescription>
-                                Você tem certeza que quer apagar esse chat? Essa ação não poderá ser desfeita.
+                                Are you sure you want to delete this chat? This
+                                action cannot be undone.
                               </DialogDescription>
                               <div className="flex justify-end gap-2">
-                                <Button variant="outline">Cancelar</Button>
+                                <Button variant="outline">Cancel</Button>
                                 <Button
                                   variant="destructive"
                                   onClick={(e) => {

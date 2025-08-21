@@ -41,7 +41,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setUserName(values.username); // Update the userName in the store
-    toast.success("Nome Atualizado com Sucesso!");
+    toast.success("Name updated successfully");
   }
 
   return (
@@ -60,7 +60,7 @@ export default function EditUsernameForm({ setOpen }: EditUsernameFormProps) {
               <FormControl>
                 <div className="md:flex gap-4">
                   <Input {...field} type="text" placeholder="Enter your name" />
-                  <Button type="submit">Alterar</Button>
+                  <Button type="submit">Change name</Button>
                 </div>
               </FormControl>
               <FormMessage />

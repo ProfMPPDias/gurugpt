@@ -66,7 +66,7 @@ export default function Chat({ initialMessages, id, isMobile }: ChatProps) {
     window.history.replaceState({}, "", `/c/${id}`);
 
     if (!selectedModel) {
-      toast.error("Selecione o Modelo");
+      toast.error("Please select a model");
       return;
     }
 
@@ -128,13 +128,13 @@ export default function Chat({ initialMessages, id, isMobile }: ChatProps) {
         <div className="flex flex-col h-full w-full items-center gap-4 justify-center">
           <Image
             src="/ollama.png"
-            alt="GuruGPT"
+            alt="AI"
             width={40}
             height={40}
             className="h-16 w-14 object-contain dark:invert"
           />
           <p className="text-center text-base text-muted-foreground">
-            O que posso te ajudar hoje?
+            How can I help you today?
           </p>
           <ChatBottombar
             input={input}
