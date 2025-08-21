@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="ollama-nextjs-ui.gif">
 </div>
 
 <h1 align="center">
