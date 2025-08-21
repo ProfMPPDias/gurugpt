@@ -22,7 +22,7 @@ export default function Home() {
   const onOpenChange = (isOpen: boolean) => {
     if (userName) return setOpen(isOpen);
 
-    setUserName("Anonymous");
+    setUserName("Anônonimo");
     setOpen(isOpen);
   };
 
