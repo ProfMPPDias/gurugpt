@@ -44,7 +44,7 @@ export default function UserSettings() {
           <Avatar className="flex justify-start items-center overflow-hidden">
             <AvatarImage
               src=""
-              alt="AI"
+              alt="GuruGPT"
               width={4}
               height={4}
               className="object-contain"
@@ -67,7 +67,7 @@ export default function UserSettings() {
             <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
               <div className="flex w-full gap-2 p-1 items-center cursor-pointer">
                 <GearIcon className="w-4 h-4" />
-                Settings
+                Configurações
               </div>
             </DropdownMenuItem>
           </DialogTrigger>

@@ -42,7 +42,7 @@ export default function ChatList({
               src="/ollama.png"
               width={6}
               height={6}
-              className="object-contain dark:invert"
+              className="object-contain"
             />
             <ChatBubbleMessage isLoading />
           </ChatBubble>

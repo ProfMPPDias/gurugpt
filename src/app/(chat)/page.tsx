@@ -22,7 +22,7 @@ export default function Home() {
   const onOpenChange = (isOpen: boolean) => {
     if (userName) return setOpen(isOpen);
 
-    setUserName("Anonymous");
+    setUserName("Anônimo");
     setOpen(isOpen);
   };
 
@@ -38,10 +38,9 @@ export default function Home() {
         />
         <DialogContent className="flex flex-col space-y-4">
           <DialogHeader className="space-y-2">
-            <DialogTitle>Welcome to Ollama!</DialogTitle>
+            <DialogTitle>Bem-Vindo ao GuruGPT</DialogTitle>
             <DialogDescription>
-              Enter your name to get started. This is just to personalize your
-              experience.
+              Entre com seu nome de usuário. E tenha uma experiência personalizada!
             </DialogDescription>
             <UsernameForm setOpen={setOpen} />
           </DialogHeader>

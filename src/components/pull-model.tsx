@@ -10,11 +10,11 @@ export default function PullModel() {
       <DialogTrigger asChild>
         <div className="flex w-full gap-2 p-1 items-center cursor-pointer">
           <DownloadIcon className="w-4 h-4" />
-          <p>Pull model</p>
+          <p>Instalar Modelos</p>
         </div>
       </DialogTrigger>
       <DialogContent className="space-y-2">
-        <DialogTitle>Pull Model</DialogTitle>
+        <DialogTitle>Instalar Modelos</DialogTitle>
         <PullModelForm />
       </DialogContent>
     </Dialog>

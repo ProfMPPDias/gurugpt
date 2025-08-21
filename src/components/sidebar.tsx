@@ -70,13 +70,13 @@ export function Sidebar({
             {!isCollapsed && !isMobile && (
               <Image
                 src="/ollama.png"
-                alt="AI"
+                alt="GuruGPT"
                 width={28}
                 height={28}
-                className="dark:invert hidden 2xl:block"
+                className="hidden 2xl:block"
               />
             )}
-            New chat
+            Novo Chat
           </div>
           <SquarePen size={18} className="shrink-0 w-4 h-4" />
         </Button>
@@ -132,18 +132,17 @@ export function Sidebar({
                               onClick={(e) => e.stopPropagation()}
                             >
                               <Trash2 className="shrink-0 w-4 h-4" />
-                              Delete chat
+                              Apagar Chat
                             </Button>
                           </DialogTrigger>
                           <DialogContent>
                             <DialogHeader className="space-y-4">
-                              <DialogTitle>Delete chat?</DialogTitle>
+                              <DialogTitle>Apagar Chat?</DialogTitle>
                               <DialogDescription>
-                                Are you sure you want to delete this chat? This
-                                action cannot be undone.
+                                Tem certeza que deseja apagar este chat? Esse processo não pode ser desfeito.
                               </DialogDescription>
                               <div className="flex justify-end gap-2">
-                                <Button variant="outline">Cancel</Button>
+                                <Button variant="outline">Cancelar</Button>
                                 <Button
                                   variant="destructive"
                                   onClick={(e) => {
@@ -152,7 +151,7 @@ export function Sidebar({
                                     router.push("/");
                                   }}
                                 >
-                                  Delete
+                                  Apagar
                                 </Button>
                               </div>
                             </DialogHeader>

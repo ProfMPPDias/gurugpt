@@ -22,7 +22,7 @@ import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, {
-    message: "Please select a model to pull",
+    message: "Selecione um Modelo para Instalar",
   }),
 });
 
@@ -74,12 +74,12 @@ export default function PullModelForm() {
 
       await processStream(response.body, throttledSetProgress, lastStatus);
 
-      toast.success("Model pulled successfully");
+      toast.success("Modelo Instalado com Sucesso!");
       router.refresh();
     } catch (error) {
       toast.error(
         `Error: ${
-          error instanceof Error ? error.message : "Failed to pull model"
+          error instanceof Error ? error.message : "Falha na Instalação do Modelo."
         }`
       );
     } finally {
@@ -161,7 +161,7 @@ export default function PullModelForm() {
                 >
                   library
                 </a>{" "}
-                for a list of available models.
+                para a lista de modelos disponíveis.
               </p>
               <FormMessage />
               <div className="space-y-2 w-full">
@@ -179,7 +179,7 @@ export default function PullModelForm() {
                       </span>
                     </div>
                   ) : (
-                    "Pull model"
+                    "Instalar Modelo"
                   )}
                 </Button>
                 <p className="text-xs text-center">

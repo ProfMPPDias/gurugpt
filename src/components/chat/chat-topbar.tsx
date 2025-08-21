@@ -93,7 +93,7 @@ export default function ChatTopbar({
             aria-expanded={open}
             className="w-[300px] justify-between"
           >
-            {selectedModel || "Select model"}
+            {selectedModel || "Selecione o Modelo"}
             <CaretSortIcon className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
@@ -113,7 +113,7 @@ export default function ChatTopbar({
             ))
           ) : (
             <Button variant="ghost" disabled className=" w-full">
-              No models available
+              Sem Modelos Disponíveis
             </Button>
           )}
         </PopoverContent>
