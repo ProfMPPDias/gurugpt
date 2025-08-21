@@ -22,7 +22,7 @@ import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, {
-    message: "Selecione um Modelo para Instalar",
+    message: "Selecione o modelo para instalar",
   }),
 });
 
@@ -65,11 +65,11 @@ export default function PullModelForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("A rede não responde.");
       }
 
       if (!response.body) {
-        throw new Error("Something went wrong");
+        throw new Error("Erro");
       }
 
       await processStream(response.body, throttledSetProgress, lastStatus);
@@ -79,7 +79,7 @@ export default function PullModelForm() {
     } catch (error) {
       toast.error(
         `Error: ${
-          error instanceof Error ? error.message : "Falha na Instalação do Modelo."
+          error instanceof Error ? error.message : "Failed to pull model"
         }`
       );
     } finally {
@@ -143,7 +143,7 @@ export default function PullModelForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Modelo</FormLabel>
+              <FormLabel>Modelos</FormLabel>
               <FormControl>
                 <Input
                   {...field}
@@ -159,9 +159,9 @@ export default function PullModelForm() {
                   target="_blank"
                   className="text-blue-500 underline"
                 >
-                  a biblioteca,
+                  biblioteca
                 </a>{" "}
-                para a lista de modelos disponíveis.
+                para a lista de modelos.
               </p>
               <FormMessage />
               <div className="space-y-2 w-full">
@@ -184,8 +184,8 @@ export default function PullModelForm() {
                 </Button>
                 <p className="text-xs text-center">
                   {isDownloading
-                    ? "Por favor, aguarde enquanto instala. Para segurança da instalação, não feche a aba."
-                    : "Pressione o botão "Instalar Modleo" para instalar em seu dispositivo."}
+                    ? "Isso pode demorar um pouco. Você pode fechar este modal com segurança e continuar usando o aplicativo."
+                    : "Pressionar o botão fará o download do modelo especificado para o seu dispositivo."}
                 </p>
               </div>
             </FormItem>
