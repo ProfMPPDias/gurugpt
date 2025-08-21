@@ -131,7 +131,7 @@ export default function Chat({ initialMessages, id, isMobile }: ChatProps) {
             alt="GuruGPT"
             width={120}
             height={120}
-            className="h-16 w-14 object-contain"
+            className="h-120 w-120 object-contain"
           />
           <p className="text-center text-base text-muted-foreground">
             Olá, o que posso ajudar hoje?
