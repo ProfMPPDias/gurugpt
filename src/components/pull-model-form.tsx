@@ -143,7 +143,7 @@ export default function PullModelForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Model name</FormLabel>
+              <FormLabel>Modelo</FormLabel>
               <FormControl>
                 <Input
                   {...field}
@@ -153,13 +153,13 @@ export default function PullModelForm() {
                 />
               </FormControl>
               <p className="text-xs pt-1">
-                Check the{" "}
+                Confira a{" "}
                 <a
                   href="https://ollama.com/library"
                   target="_blank"
                   className="text-blue-500 underline"
                 >
-                  library
+                  a biblioteca,
                 </a>{" "}
                 para a lista de modelos disponíveis.
               </p>
@@ -184,8 +184,8 @@ export default function PullModelForm() {
                 </Button>
                 <p className="text-xs text-center">
                   {isDownloading
-                    ? "This may take a while. You can safely close this modal and continue using the app."
-                    : "Pressing the button will download the specified model to your device."}
+                    ? "Por favor, aguarde enquanto instala. Para segurança da instalação, não feche a aba."
+                    : "Pressione o botão "Instalar Modleo" para instalar em seu dispositivo."}
                 </p>
               </div>
             </FormItem>
