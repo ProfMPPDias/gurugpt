@@ -129,8 +129,8 @@ export default function Chat({ initialMessages, id, isMobile }: ChatProps) {
           <Image
             src="/ollama.png"
             alt="GuruGPT"
-            width={80}
-            height={80}
+            width={120}
+            height={120}
             className="h-16 w-14 object-contain"
           />
           <p className="text-center text-base text-muted-foreground">

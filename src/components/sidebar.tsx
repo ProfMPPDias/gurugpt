@@ -82,7 +82,7 @@ export function Sidebar({
         </Button>
 
         <div className="flex flex-col pt-10 gap-2">
-          <p className="pl-4 text-xs text-muted-foreground">Your chats</p>
+          <p className="pl-4 text-xs text-muted-foreground">Suas Conversações</p>
           <Suspense fallback>
             {chats &&
               Object.entries(chats)
