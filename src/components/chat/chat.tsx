@@ -127,7 +127,7 @@ export default function Chat({ initialMessages, id, isMobile }: ChatProps) {
       {messages.length === 0 ? (
         <div className="flex flex-col h-full w-full items-center gap-4 justify-center">
           <Image
-            src="https://i.imgur.com/B04xPwl.png"
+            src="ollama.png"
             alt="GuruGPT"
             width={40}
             height={40}

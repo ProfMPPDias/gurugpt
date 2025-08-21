@@ -40,8 +40,7 @@ export default function Home() {
           <DialogHeader className="space-y-2">
             <DialogTitle>Bem-Vindo ao GuruGPT</DialogTitle>
             <DialogDescription>
-              Enter your name to get started. This is just to personalize your
-              experience.
+              Digite seu nome para iniciar. Tenha uma experiência personalizada!
             </DialogDescription>
             <UsernameForm setOpen={setOpen} />
           </DialogHeader>

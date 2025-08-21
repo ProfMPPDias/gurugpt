@@ -39,7 +39,7 @@ export default function ChatList({
         {loadingSubmit && (
           <ChatBubble variant="received">
             <ChatBubbleAvatar
-              src="https://i.imgur.com/B04xPwl.png"
+              src="ollama.png"
               width={6}
               height={6}
               className="object-contain dark:invert"
